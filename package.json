@@ -1,0 +1,22 @@
+{
+  "name": "league-gamemode-app",
+  "version": "1.0.0",
+  "description": "https://liutauras-v.github.io/league-gamemode-app/",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Liutauras-v/league-gamemode-app.git"
+  },
+  "author": "Liutauras Vijeikis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Liutauras-v/league-gamemode-app/issues"
+  },
+  "homepage": "https://github.com/Liutauras-v/league-gamemode-app#readme",
+  "dependencies": {
+    "cypress": "^9.2.0"
+  }
+}

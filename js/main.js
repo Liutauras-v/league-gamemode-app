@@ -65,14 +65,11 @@ gamemodes.push(new Gamemode("Prisoner", "Team captain can only buy items after g
 gamemodes.push(new Gamemode("Opposite day", "Win by losing", 10, r_legendary, "opday.png"));
 
 
-console.log(gamemodes);
+function generateAllRules(gamemodesList) {
 
-
-function generateAllRules(){
-    
     let HTML = '';
 
-    gamemodes.forEach(gm => {
+    gamemodesList.forEach(gm => {
         HTML += '<div class="col">';
         HTML += '<div class="card shadow-sm">';
         HTML += `<span class="card-role" style="border: 2px solid ${gm.role.color}; color: ${gm.role.color};">${gm.role.name}</span>`;
@@ -89,8 +86,52 @@ function generateAllRules(){
     return HTML;
 }
 
+function generateRules() {
+
+    let fetched_modes = [];
+
+    let g_builds = gamemodes.filter((g) => { return g.role == r_builds });
+    let g_champPool = gamemodes.filter((g) => { return g.role == r_champPool });
+    let g_gameplay = gamemodes.filter((g) => { return g.role == r_gameplay });
+    let g_pregame = gamemodes.filter((g) => { return g.role == r_pregame });
+    let g_captain = gamemodes.filter((g) => { return g.role == r_captain });
+    let g_legendary = gamemodes.filter((g) => { return g.role == r_legendary });
+
+    fetched_modes.push(getRandomItem(g_builds));
+    fetched_modes.push(getRandomItem(g_champPool));
+    fetched_modes.push(getRandomItem(g_gameplay));
+    fetched_modes.push(getRandomItem(g_pregame));
+    if (document.querySelector("#captainBox").checked == true) {
+        fetched_modes.push(getRandomItem(g_captain));
+    }
+    if (document.querySelector("#captainBox").checked == true && roleForLegendary(4)) {
+        fetched_modes.push(getRandomItem(g_legendary));
+    }
+
+    document.querySelector("#generatedRules").innerHTML = generateAllRules(fetched_modes);
+
+}
+
+function getRandomItem(arr) {
+    return arr[Math.floor((Math.random() * arr.length))];
+}
+
+function roleForLegendary(chance) {
+    let num = Math.floor(Math.random() * (100 - 1 + 1) + 1);
+    if (num <= chance) {
+        return true;
+    }
+    return false;
+}
+
 try {
-    document.querySelector("#listOfRules").innerHTML = generateAllRules();
+    document.querySelector("#listOfRules").innerHTML = generateAllRules(gamemodes);
+} catch (error) {
+    // do nothing
+}
+
+try {
+    document.querySelector("#generate").addEventListener("click", () => { generateRules() });
 } catch (error) {
     // do nothing
 }

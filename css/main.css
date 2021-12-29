@@ -65,3 +65,11 @@ body {
 #listOfRules {
     padding-left: 5%;
 }
+
+#generate{
+    margin-top: 10px;
+}
+
+#generatedRules{
+    margin-top: 50px;
+}

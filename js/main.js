@@ -20,46 +20,49 @@ gamemodes.push(new Gamemode("Weakness", "Attack damage items are banned", 10, r_
 gamemodes.push(new Gamemode("Rock solid", "Tank / Fighter items only", 10, r_builds, "armor.png"));
 gamemodes.push(new Gamemode("Pillow fight", "Support items only", 10, r_builds, "spellthiefs.png"));
 gamemodes.push(new Gamemode("What is this healing?", "Grievous wounds items are banned (including ignite)", 10, r_builds, "blood.png"));
-gamemodes.push(new Gamemode("Invisible weak spots", "Armor / Magic penetration items are banned (including some item passives that have penetration)", 10, r_builds, "nopen.png"));
+gamemodes.push(new Gamemode("No penetration", "Armor / Magic penetration items are banned (including some item passives that have penetration)", 10, r_builds, "nopen.png"));
 gamemodes.push(new Gamemode("Classic builds", "Mythic items are banned", 10, r_builds, "nomythic.png"));
 gamemodes.push(new Gamemode("Mythic power spike", "Mythic item can only be purchased as a last item", 10, r_builds, "tryforce.png"));
 
-gamemodes.push(new Gamemode("Mage champions only", "$", 10, r_champPool, "rabadons.png"));
-gamemodes.push(new Gamemode("Tank champions only", "$", 10, r_champPool, "rabadons.png"));
-gamemodes.push(new Gamemode("Fighter champions only", "$", 10, r_champPool, "rabadons.png"));
-gamemodes.push(new Gamemode("Assassin champions only", "$", 10, r_champPool, "rabadons.png"));
-gamemodes.push(new Gamemode("Marksman champions only", "$", 10, r_champPool, "rabadons.png"));
-gamemodes.push(new Gamemode("Support champions only", "$", 10, r_champPool, "rabadons.png"));
+gamemodes.push(new Gamemode("Mages", "Mage champions only", 10, r_champPool, "mage.png"));
+gamemodes.push(new Gamemode("Tanks", "Tank champions only", 10, r_champPool, "tank.png"));
+gamemodes.push(new Gamemode("Fighters", "Fighter champions only", 10, r_champPool, "fighter.png"));
+gamemodes.push(new Gamemode("Assassins", "Assassin champions only", 10, r_champPool, "assassin.png"));
+gamemodes.push(new Gamemode("Marksmans", "Marksman champions only", 10, r_champPool, "adc.png"));
+gamemodes.push(new Gamemode("Supports", "Support champions only (Mage supports (I.E. Lux, Swain) are not allowed)", 10, r_champPool, "support.png"));
 
-gamemodes.push(new Gamemode("No items until 5 minutes", "$", 10, r_gameplay, "rabadons.png"));
-gamemodes.push(new Gamemode("No items until 10 minutes", "$", 10, r_gameplay, "rabadons.png"));
-gamemodes.push(new Gamemode("No items until 15 minutes", "$", 10, r_gameplay, "rabadons.png"));
-gamemodes.push(new Gamemode("No items until first blood", "$", 10, r_gameplay, "rabadons.png"));
-gamemodes.push(new Gamemode("No items until first drake (any team)", "$", 10, r_gameplay, "rabadons.png"));
-gamemodes.push(new Gamemode("No items until first tower (any team)", "$", 10, r_gameplay, "rabadons.png"));
-gamemodes.push(new Gamemode("No items until first tower", "$", 10, r_gameplay, "rabadons.png"));
-gamemodes.push(new Gamemode("No items until first kill", "$", 10, r_gameplay, "rabadons.png"));
-gamemodes.push(new Gamemode("No items until first death", "$", 10, r_gameplay, "rabadons.png"));
-gamemodes.push(new Gamemode("No wards", "$", 10, r_gameplay, "rabadons.png"));
-gamemodes.push(new Gamemode("Don't fight until 5 minutes", "$", 10, r_gameplay, "rabadons.png"));
-gamemodes.push(new Gamemode("Don't fight until 10 minutes", "$", 10, r_gameplay, "rabadons.png"));
-gamemodes.push(new Gamemode("Missed cannon forces all summoner spells (until 10 minutes)", "$", 10, r_gameplay, "rabadons.png"));
-gamemodes.push(new Gamemode("Missed cannon forces to recall (until 10 minutes)", "$", 10, r_gameplay, "rabadons.png"));
-gamemodes.push(new Gamemode("Don't go back while a jungle buff is active (exepct dragon)", "$", 10, r_gameplay, "rabadons.png"));
+gamemodes.push(new Gamemode("Forgot to buy items", "No items until 5 minutes", 10, r_gameplay, "5min.png"));
+gamemodes.push(new Gamemode("Forgot to buy items... again", "No items until 10 minutes", 10, r_gameplay, "10min.png"));
+gamemodes.push(new Gamemode("I don't need items", "No items until 15 minutes", 10, r_gameplay, "15min.png"));
+gamemodes.push(new Gamemode("Bloody items", "No items until first blood", 10, r_gameplay, "firstblood.png"));
+gamemodes.push(new Gamemode("Drake items", "No items until first drake (any team)", 10, r_gameplay, "drakekill.png"));
+gamemodes.push(new Gamemode("Stone items (any team)", "No items until first tower (any team)", 10, r_gameplay, "turret1.png"));
+gamemodes.push(new Gamemode("Stone items", "No items until your team  gets a first tower", 10, r_gameplay, "turret2.png"));
+gamemodes.push(new Gamemode("Bloody items (personal)", "You can only buy items after you get your first kill", 10, r_gameplay, "firstkill.png"));
+gamemodes.push(new Gamemode("ARAM items", "No items until your first death", 10, r_gameplay, "aram.png"));
+gamemodes.push(new Gamemode("Darkness", "Wards are not allowed. Oracle Lens is allowed", 10, r_gameplay, "noward.png"));
+gamemodes.push(new Gamemode("Bro lane", "Don't fight until 5 minutes", 10, r_gameplay, "cull.png"));
+gamemodes.push(new Gamemode("Nasus on copium", "Don't fight until 10 minutes", 10, r_gameplay, "nasusq.png"));
+gamemodes.push(new Gamemode("*Slaps keyboard*", "Missed cannon forces all summoner spells (until 10 minutes)", 10, r_gameplay, "flash.png"));
+gamemodes.push(new Gamemode("AFK", "Missed cannon forces you to recall (until 10 minutes)", 10, r_gameplay, "recall.png"));
+gamemodes.push(new Gamemode("Jungle curse", "Don't go back while a jungle buff is active (exepct dragon)", 10, r_gameplay, "baron.png"));
+gamemodes.push(new Gamemode("Low elo", "Epic monsters can't be killed", 10, r_gameplay, "nodrake.png"));
 
-gamemodes.push(new Gamemode("Precision rune tree only", "$", 10, r_pregame, "rabadons.png"));
-gamemodes.push(new Gamemode("Domination rune tree only", "$", 10, r_pregame, "rabadons.png"));
-gamemodes.push(new Gamemode("Sorcery rune tree only", "$", 10, r_pregame, "rabadons.png"));
-gamemodes.push(new Gamemode("Resolve rune tree only", "$", 10, r_pregame, "rabadons.png"));
-gamemodes.push(new Gamemode("Inspiration rune tree only", "$", 10, r_pregame, "rabadons.png"));
-gamemodes.push(new Gamemode("Flash summoner spell is banned", "$", 10, r_pregame, "rabadons.png"));
-gamemodes.push(new Gamemode("Teleport summoner spell is mandatory", "$", 10, r_pregame, "rabadons.png"));
+gamemodes.push(new Gamemode("Precision rune tree only", "You can only use precision rune tree", 10, r_pregame, "precrune.png"));
+gamemodes.push(new Gamemode("Domination rune tree only", "You can only use domination rune tree", 10, r_pregame, "dominationrune.png"));
+gamemodes.push(new Gamemode("Sorcery rune tree only", "You can only use sorcery rune tree", 10, r_pregame, "sorceryrune.png"));
+gamemodes.push(new Gamemode("Resolve rune tree only", "You can only use resolve rune tree", 10, r_pregame, "resolverune.png"));
+gamemodes.push(new Gamemode("Inspiration rune tree only", "You can only use inspiration rune tree", 10, r_pregame, "insprune.png"));
+gamemodes.push(new Gamemode("Flashless", "Flash summoner spell is banned", 10, r_pregame, "noflash.png"));
+gamemodes.push(new Gamemode("Pro play", "Teleport summoner spell is mandatory", 10, r_pregame, "tp.png"));
+gamemodes.push(new Gamemode("Disco nunu", "Ghost and clense summoner spells are mandatory (ghost and smite for junglers)", 10, r_pregame, "nunu.png"));
 
-gamemodes.push(new Gamemode("I'm the captain here", "Team captain ignores all other rules", 10, r_captain, "rabadons.png"));
-gamemodes.push(new Gamemode("Instalock", "Team captain has to play Yasuo or Yone (Yasuo and Yone can't be banned)", 10, r_captain, "rabadons.png"));
-gamemodes.push(new Gamemode("Prisoner", "Team captain can only buy items after getting his first kill", 10, r_captain, "rabadons.png"));
+gamemodes.push(new Gamemode("I'm the captain here", "Team captain ignores all other rules", 10, r_captain, "gpface.png"));
+gamemodes.push(new Gamemode("Kill command", "Team captain can ask anyone at any point to die to him (once per game)", 10, r_captain, "killcom.png"));
+gamemodes.push(new Gamemode("Instalock", "Team captain has to play Yasuo or Yone (Yasuo and Yone can't be banned)", 10, r_captain, "yasuo.png"));
+gamemodes.push(new Gamemode("Prisoner", "Team captain can only buy items after getting his first kill", 10, r_captain, "prisoner.png"));
 
-gamemodes.push(new Gamemode("Opposite day", "Win by losing", 10, r_legendary, "rabadons.png"));
+gamemodes.push(new Gamemode("Opposite day", "Win by losing", 10, r_legendary, "opday.png"));
 
 
 console.log(gamemodes);

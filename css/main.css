@@ -56,6 +56,10 @@ body {
     border-radius: 15px;
     font-weight: bold;
     padding: 3px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 #listOfRules {

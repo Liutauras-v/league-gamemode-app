@@ -1,0 +1,63 @@
+body {
+    padding-top: 80px;
+}
+
+.nav-active-line{
+    text-decoration: underline;
+}
+
+.nav-link {
+    color: #050;
+}
+
+.nav-link:hover {
+    color: #080
+}
+
+.card {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 25px;
+    transition: 0.2s;
+    position: relative;
+    /* -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; */
+    /* cursor: default; */
+}
+
+.card:hover {
+    background-color: #ccc;
+}
+
+.card-img-top {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.card-imgbox {
+    padding: 10px 10px 0px 15px;
+}
+
+.card-body {
+    padding-top: 10px;
+}
+
+.col {
+    flex-grow: 0;
+}
+
+.card-role{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 3px;
+}
+
+#listOfRules {
+    padding-left: 5%;
+}

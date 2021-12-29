@@ -1,0 +1,1 @@
+https://liutauras-v.github.io/league-gamemode-app/

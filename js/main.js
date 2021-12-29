@@ -74,7 +74,7 @@ function generateAllRules(){
         HTML += '<div class="card shadow-sm">';
         HTML += `<span class="card-role" style="border: 2px solid ${gm.role.color}; color: ${gm.role.color};">${gm.role.name}</span>`;
         HTML += '<div class="card-imgbox">';
-        HTML += `<img class="card-img-top" src="/img/${gm.img}" alt="${gm.img}" />`;
+        HTML += `<img class="card-img-top" src="./img/${gm.img}" alt="${gm.img}" />`;
         HTML += '</div>';
         HTML += '<div class="card-body">';
         HTML += `<h5 class="card-text">${gm.name}</h3>`;

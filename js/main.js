@@ -118,9 +118,9 @@ function generateRules() {
     document.querySelector("#generatedRulesTeam1").innerHTML = "";
     document.querySelector("#generatedRulesTeam2").innerHTML = "";
 
-    document.querySelector("#generatedRulesTeam1").innerHTML = generateAllRules(buildTeam(), "Blue Team");
+    document.querySelector("#generatedRulesTeam1").innerHTML = generateAllRules(buildTeam(), "Blue Team:");
     if (document.querySelector("#teamBalanceBox").checked) {
-        document.querySelector("#generatedRulesTeam2").innerHTML = generateAllRules(buildTeam(), "Red Team");
+        document.querySelector("#generatedRulesTeam2").innerHTML = generateAllRules(buildTeam(), "Red Team:");
     }
 
 }

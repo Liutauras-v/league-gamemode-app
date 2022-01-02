@@ -104,7 +104,7 @@ function generateRules() {
     if (document.querySelector("#captainBox").checked == true) {
         fetched_modes.push(getRandomItem(g_captain));
     }
-    if (document.querySelector("#captainBox").checked == true && roleForLegendary(4)) {
+    if (document.querySelector("#legendaryBox").checked == true && roleForLegendary(4)) {
         fetched_modes.push(getRandomItem(g_legendary));
     }
 

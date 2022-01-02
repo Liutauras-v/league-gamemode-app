@@ -62,6 +62,8 @@ gamemodes.push(new Gamemode("Instalock", "Team captain has to play Yasuo or Yone
 gamemodes.push(new Gamemode("Prisoner", "Team captain can only buy items after getting his first kill", 10, r_captain, "prisoner.png"));
 
 gamemodes.push(new Gamemode("Opposite day", "Win by losing", 10, r_legendary, "opday.png"));
+gamemodes.push(new Gamemode("Permadeath", "After dying 3 times - you must stay afk for the rest of the game", 10, r_legendary, "permadeath.png"));
+gamemodes.push(new Gamemode("Nemesis Draft", "Every player picks a champion for the opposing team", 10, r_legendary, "taric.png"));
 
 
 function generateAllRules(gamemodesList, teamName) {

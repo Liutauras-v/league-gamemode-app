@@ -103,7 +103,7 @@ body {
     padding-left: 5%;
 }
 
-#generate {
+#generate, #advanced-settings {
     margin-top: 10px;
 }
 
@@ -116,4 +116,8 @@ body {
     font-size: 42px;
     font-weight: bold;
     padding-left: 15px;
+}
+
+.adv-stg{
+    display: none;
 }

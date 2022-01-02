@@ -1,17 +1,50 @@
+::-moz-selection {
+    color: #fff;
+    background: #080;
+}
+
+::selection {
+    color: #fff;
+    background: #080;
+}
+
+
 body {
     padding-top: 80px;
 }
 
-.nav-active-line{
+.nav-active-line {
     text-decoration: underline;
 }
 
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 10px;
+}
+
 .nav-link {
-    color: #050;
+    color: #070;
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 5px;
 }
 
 .nav-link:hover {
-    color: #080
+    color: #0a0
+}
+
+.form-check {
+    margin-bottom: 2px;
+}
+
+.form-check>input {
+    transform: scale(1.5);
+}
+
+.form-check>label {
+    font-size: 18px;
 }
 
 .card {
@@ -49,7 +82,7 @@ body {
     flex-grow: 0;
 }
 
-.card-role{
+.card-role {
     position: absolute;
     right: 10px;
     top: 10px;
@@ -66,10 +99,10 @@ body {
     padding-left: 5%;
 }
 
-#generate{
+#generate {
     margin-top: 10px;
 }
 
-#generatedRules{
+#generatedRules {
     margin-top: 50px;
 }

@@ -37,6 +37,7 @@ body {
 
 .form-check {
     margin-bottom: 2px;
+    padding-left: 22px;
 }
 
 .form-check>input {
@@ -103,6 +104,13 @@ body {
     margin-top: 10px;
 }
 
-#generatedRules {
+.generatedRules {
     margin-top: 50px;
+}
+
+.team-name {
+    width: 100%;
+    font-size: 42px;
+    font-weight: bold;
+    padding-left: 15px;
 }

@@ -1,4 +1,3 @@
-import Game from './game.js';
 import Gamemode from './gamemode.js';
 import Role from './role.js';
 
@@ -65,9 +64,13 @@ gamemodes.push(new Gamemode("Prisoner", "Team captain can only buy items after g
 gamemodes.push(new Gamemode("Opposite day", "Win by losing", 10, r_legendary, "opday.png"));
 
 
-function generateAllRules(gamemodesList) {
+function generateAllRules(gamemodesList, teamName) {
 
     let HTML = '';
+    
+    if(document.querySelector("#teamBalanceBox").checked){
+        HTML += `<p class="team-name">${teamName}</p>`;
+    }
 
     gamemodesList.forEach(gm => {
         HTML += '<div class="col">';
@@ -86,8 +89,7 @@ function generateAllRules(gamemodesList) {
     return HTML;
 }
 
-function generateRules() {
-
+function buildTeam() {
     let fetched_modes = [];
 
     let g_builds = gamemodes.filter((g) => { return g.role == r_builds });
@@ -101,14 +103,25 @@ function generateRules() {
     fetched_modes.push(getRandomItem(g_champPool));
     fetched_modes.push(getRandomItem(g_gameplay));
     fetched_modes.push(getRandomItem(g_pregame));
-    if (document.querySelector("#captainBox").checked == true) {
+    if (document.querySelector("#captainBox").checked) {
         fetched_modes.push(getRandomItem(g_captain));
     }
-    if (document.querySelector("#legendaryBox").checked == true && roleForLegendary(4)) {
+    if (document.querySelector("#legendaryBox").checked && roleForLegendary(4)) {
         fetched_modes.push(getRandomItem(g_legendary));
     }
 
-    document.querySelector("#generatedRules").innerHTML = generateAllRules(fetched_modes);
+    return fetched_modes;
+}
+
+function generateRules() {
+
+    document.querySelector("#generatedRulesTeam1").innerHTML = "";
+    document.querySelector("#generatedRulesTeam2").innerHTML = "";
+
+    document.querySelector("#generatedRulesTeam1").innerHTML = generateAllRules(buildTeam(), "Blue Team");
+    if (document.querySelector("#teamBalanceBox").checked) {
+        document.querySelector("#generatedRulesTeam2").innerHTML = generateAllRules(buildTeam(), "Red Team");
+    }
 
 }
 

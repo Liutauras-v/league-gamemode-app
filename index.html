@@ -43,18 +43,6 @@
           class="form-check-input"
           type="checkbox"
           value=""
-          id="legendaryBox"
-        />
-        <label class="form-check-label" for="flexCheckDefault">
-          Allow legendaries? (4% chance)
-        </label>
-      </div>
-
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          value=""
           id="teamBalanceBox"
         />
         <label class="form-check-label" for="flexCheckDefault">
@@ -62,15 +50,183 @@
         </label>
       </div>
 
-      <div class="form-check adv-stg">
+      <div class="form-check adv-stg-hook adv-stg">
         <input
           class="form-check-input"
           type="checkbox"
           value=""
-          id="teamBalanceBox"
+          id="rarityBox"
         />
         <label class="form-check-label" for="flexCheckDefault">
-          Unbalanced teams?
+          Ignore rarities
+        </label>
+      </div>
+
+      <div class="form-check adv-stg-hook adv-stg">
+        <input
+          class="form-check-input"
+          type="number"
+          value="1"
+          min="0"
+          max="3"
+          id="i_build_pool"
+        />
+        <label class="form-number-label" for="flexCheckDefault">
+          Build category pool
+        </label>
+      </div>
+
+      <div class="form-check adv-stg-hook adv-stg">
+        <input
+          class="form-check-input"
+          type="number"
+          value="100"
+          min="0"
+          max="100"
+          id="i_build_chance"
+        />
+        <label class="form-number-label" for="flexCheckDefault">
+          Build drop chance %
+        </label>
+      </div>
+
+      <div class="form-check adv-stg-hook adv-stg">
+        <input
+          class="form-check-input"
+          type="number"
+          value="1"
+          min="0"
+          max="3"
+          id="i_champion_pool"
+        />
+        <label class="form-number-label" for="flexCheckDefault">
+          Champion category pool
+        </label>
+      </div>
+
+      <div class="form-check adv-stg-hook adv-stg">
+        <input
+          class="form-check-input"
+          type="number"
+          value="100"
+          min="0"
+          max="100"
+          id="i_champion_chance"
+        />
+        <label class="form-number-label" for="flexCheckDefault">
+          Champion drop chance %
+        </label>
+      </div>
+
+      <div class="form-check adv-stg-hook adv-stg">
+        <input
+          class="form-check-input"
+          type="number"
+          value="1"
+          min="0"
+          max="3"
+          id="i_gameplay_pool"
+        />
+        <label class="form-number-label" for="flexCheckDefault">
+          Gameplay category pool
+        </label>
+      </div>
+
+      <div class="form-check adv-stg-hook adv-stg">
+        <input
+          class="form-check-input"
+          type="number"
+          value="100"
+          min="0"
+          max="100"
+          id="i_gameplay_chance"
+        />
+        <label class="form-number-label" for="flexCheckDefault">
+          Gameplay drop chance %
+        </label>
+      </div>
+
+      <div class="form-check adv-stg-hook adv-stg">
+        <input
+          class="form-check-input"
+          type="number"
+          value="1"
+          min="0"
+          max="3"
+          id="i_pregame_pool"
+        />
+        <label class="form-number-label" for="flexCheckDefault">
+          Pre-game category pool
+        </label>
+      </div>
+
+      <div class="form-check adv-stg-hook adv-stg">
+        <input
+          class="form-check-input"
+          type="number"
+          value="100"
+          min="0"
+          max="100"
+          id="i_pregame_chance"
+        />
+        <label class="form-number-label" for="flexCheckDefault">
+          Pre-game drop chance %
+        </label>
+      </div>
+
+      <div class="form-check adv-stg-hook adv-stg">
+        <input
+          class="form-check-input"
+          type="number"
+          value="1"
+          min="0"
+          max="3"
+          id="i_captain_pool"
+        />
+        <label class="form-number-label" for="flexCheckDefault">
+          Captain category pool
+        </label>
+      </div>
+
+      <div class="form-check adv-stg-hook adv-stg">
+        <input
+          class="form-check-input"
+          type="number"
+          value="100"
+          min="0"
+          max="100"
+          id="i_captain_chance"
+        />
+        <label class="form-number-label" for="flexCheckDefault">
+          Captain drop chance %
+        </label>
+      </div>
+
+      <div class="form-check adv-stg-hook adv-stg">
+        <input
+          class="form-check-input"
+          type="number"
+          value="1"
+          min="0"
+          max="3"
+          id="i_legendary_pool"
+        />
+        <label class="form-number-label" for="flexCheckDefault">
+          Legendary category pool
+        </label>
+      </div>
+
+      <div class="form-check adv-stg-hook adv-stg">
+        <input
+          class="form-check-input"
+          type="number"
+          value="4"
+          min="0"
+          max="100"
+          id="i_legendary_chance"
+        />
+        <label class="form-number-label" for="flexCheckDefault">
+          Legendary drop chance %
         </label>
       </div>
 
@@ -82,10 +238,10 @@
         value="Generate"
       />
       <input
-        class="btn btn-primary adv-stg"
+        class="btn btn-primary"
         type="button"
         id="advanced-settings"
-        value="Advanced settings"
+        value="Toggle advanced settings"
       />
 
       <div

@@ -42,8 +42,18 @@ body {
     padding-left: 22px;
 }
 
-.form-check>input {
+.form-check>input[type="checkbox"] {
     transform: scale(1.5);
+}
+
+.form-check>input[type="number"] {
+    width: 50px;
+    margin-left: -23px;
+}
+
+.form-number-label{
+    margin-left: 35px!important;
+    margin-top: 5px!important;
 }
 
 .form-check>label {
@@ -55,7 +65,7 @@ body {
     width: 300px;
     height: 200px;
     margin-bottom: 25px;
-    transition: 0.2s;
+    transition: 0.4s;
     position: relative;
     /* -webkit-user-select: none;
     -moz-user-select: none;
@@ -64,8 +74,24 @@ body {
     /* cursor: default; */
 }
 
-.card:hover {
-    background-color: #ccc;
+.card-epic:hover {
+    -webkit-box-shadow: 0px 0px 20px 4px rgba(19, 223, 248, 0.47);
+    box-shadow: 0px 0px 20px 4px rgba(19, 223, 248, 0.47);
+}
+
+.card-legendary:hover {
+    -webkit-box-shadow: 0px 0px 20px 4px rgba(232, 16, 27, 0.47);
+    box-shadow: 0px 0px 20px 4px rgba(232, 16, 27, 0.47);
+}
+
+.card-hextech:hover {
+    -webkit-box-shadow: 0px 0px 20px 4px rgba(213, 15, 204, 0.47);
+    box-shadow: 0px 0px 20px 4px rgba(213, 15, 204, 0.47);
+}
+
+.card-ultimate:hover {
+    -webkit-box-shadow: 0px 0px 20px 4px rgba(248, 148, 26, 0.47);
+    box-shadow: 0px 0px 20px 4px rgba(248, 148, 26, 0.47);
 }
 
 .card-img-top {
@@ -118,6 +144,14 @@ body {
     padding-left: 15px;
 }
 
-.adv-stg{
+.adv-stg {
     display: none;
+}
+
+.gem {
+    z-index: 2;
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }

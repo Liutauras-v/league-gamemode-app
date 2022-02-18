@@ -15,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/Liutauras-v/league-gamemode-app/issues"
   },
-  "homepage": "https://github.com/Liutauras-v/league-gamemode-app#readme",
-  "dependencies": {
-    "cypress": "^9.2.0"
-  }
+  "homepage": "https://github.com/Liutauras-v/league-gamemode-app#readme"
 }
